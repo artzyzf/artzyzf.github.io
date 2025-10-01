@@ -1,0 +1,190 @@
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+/*for dark theme*/
+	@media (prefers-color-scheme: dark) {
+	
+	.bgImage {
+		background: url(back-new-mobile-dark.gif);
+		background-size:100% 100%;
+	}
+	
+	@media screen and (min-width:1000px) {
+		.bgImage {
+			background: url(back-dark.gif);
+			background-size:100% 100%;
+		}
+	}
+	
+	.zf-sidebar {
+		background-color: #160027;
+	}
+	
+	.zf-topbar {
+		background-color:#160027;
+		color:#975ca4;
+	}
+	
+	.bgColor {
+		background-color:#160027;
+	}
+	
+	.zfColortxt {
+		color:#975ca4;
+	}
+	
+	.ld {
+		width:#000;
+	}
+	
+	.zf-textbox {
+		background-color: #160027;
+	}
+	
+	.zf-footer {
+		background-color: #160027;
+		color: #975ca4;
+	}
+	
+}/*end for dark theme*/
+
+/*for light theme*/
+@media (prefers-color-scheme: light) {
+
+	.bgImage {
+   background: url(back-new-mobile.GIF);
+	 background-size:100% 100%;
+	}
+
+	@media screen and (min-width:1000px) {
+		.bgImage {
+			background: url(back.GIF);
+			background-size:100% 100%;
+		}
+	}
+	
+	.zf-sidebar {
+		background-color: #fd3784;
+	}
+	
+	.zf-topbar {
+		background-color:#fd3784;
+	}
+	
+	.bgColor {
+		background-color:#ff90b1;
+	}
+	
+	.zfColortxt {
+		color:#9e003d;
+	}
+	
+	.ld {
+		color:#fff;
+	}
+	
+	.zf-textbox {
+		background-color: #fd3784;
+	}
+	
+	.zf-footer {
+		background-color: #fd3784;
+		color:#9e003d!important;
+	}
+	
+}/*end for light theme*/
+
+
+
+.sticker {
+	font-family: 'Fredoka One', cursive;
+  display: inline-grid;
+  grid-template-areas: "text";
+  place-items: center;
+  
+  color: #fd3784;
+
+  & > *,
+  &::before, &::after {
+    grid-area: text;
+  }
+
+  &::before, &::after {
+    content: attr(data-text);
+    color: #fff;
+  }
+
+  &::before {
+    -webkit-text-stroke: 0.21em white;
+  }
+
+  &::after {
+    text-shadow: 0.07em 0.08em 0.05em rgba(0, 0, 0, 0.75),
+      -0.07em -0.05em 0.05em rgba(0, 0, 0, 0.75);
+    z-index: -2;
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+	background-color: black;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4d3a52;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #975ca4;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

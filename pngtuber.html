@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>artzyzf</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="zf.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body class="w3-content bgImage bgColor" style="max-width:1200px;background-position:center;overflow:hidden">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-top zf-sidebar" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide zfColortxt"><b>Artzy_zf</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large zfColortxt" style="font-weight:bold">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="index.html #footer" class="w3-bar-item w3-button">About</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
+      Commissions <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="basic.html" class="w3-bar-item w3-button" onclick="w3_open()">Standered</a>
+      <a href="chibis.html" class="w3-bar-item w3-button" onclick="w3_open()">Chibis</a>
+	  <a href="backgrounds.html" class="w3-bar-item w3-button" onclick="w3_open()">Backgrounds</a>
+	  <a href="charsheets.html" class="w3-bar-item w3-button" onclick="w3_open()">Character Sheets</a>
+      <a href="emotes.html" class="w3-bar-item w3-button" onclick="w3_open()">Emotes, Banners, Badges, Screens</a>
+      <a href="pngtuber.html" class="w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-caret-right w3-margin-right"></i>PNG Tuber</a>
+	  <a href="comics.html" class="w3-bar-item w3-button" onclick="w3_open()">Comics</a>
+	  <a href="2dvtuber.html" class="w3-bar-item w3-button" onclick="w3_open()">2D Vtuber</a>
+    </div>
+  <a></a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-xlarge zf-topbar zfColortxt" style="font-weight:bold">
+  <div class="w3-bar-item w3-padding-24 w3-wide">Artzy_zf</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px;">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  
+  <!-- Slideshow Start -->
+  <!-- Slideshow Header -->
+  <div class="w3-container" id="apartment">
+    <h2 class="w3-text zfColortxt">PNG Tuber Commissions</h2>
+    
+		<!-- 1 -->
+		<div class="w3-display-container mySlides">
+    <img src="./pics/pngtube1.PNG" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Simple or Bust</p>
+      </div>
+    </div>
+		
+    <!-- 2 -->
+		<div class="w3-display-container mySlides">
+    <img src="./pics/pngarms.PNG" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Full Body</p>
+      </div>
+    </div>
+		
+		<!-- 3 -->
+    <div class="w3-display-container mySlides">
+    <img src="./pics/pngface.PNG" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Animated or Detailed</p>
+      </div>
+    </div>
+		
+		<!-- 4 -->
+    <div class="w3-display-container mySlides">
+    <img src="./pics/pngfit.PNG" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Matching</p>
+      </div>
+    </div>
+	
+		<!-- 5 -->
+    <div class="w3-display-container mySlides">
+    <img src="./pics/pngextra.PNG" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Extras (optional)</p>
+      </div>
+    </div>
+  </div>
+	
+	<!-- Slideshow Middle -->
+  <div class="w3-row-padding w3-section">
+		<!-- 1 -->
+    <div class="w3-col l2 m2 s3" style="margin-bottom:11px">
+      <img class="dot w3-opacity w3-hover-opacity-off" src="./pics/pngtube1.PNG" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Simple or Bust">
+    </div>
+		<!-- 2 -->
+    <div class="w3-col l2 m2 s3" style="margin-bottom:11px">
+      <img class="dot w3-opacity w3-hover-opacity-off" src="./pics/pngarms.PNG" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Full Body">
+    </div>
+		<!-- 3 -->
+    <div class="w3-col l2 m2 s3" style="margin-bottom:11px">
+      <img class="dot w3-opacity w3-hover-opacity-off" src="./pics/pngface.PNG" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Animated or Detailed">
+    </div>
+		<!-- 4 -->
+    <div class="w3-col l2 m2 s3" style="margin-bottom:11px">
+      <img class="dot w3-opacity w3-hover-opacity-off" src="./pics/pngfit.PNG" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Matching">
+    </div>
+		<!-- 5 -->
+    <div class="w3-col l2 m2 s3">
+      <img class="dot w3-opacity w3-hover-opacity-off" src="./pics/pngextra.PNG" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="Extras (optional)">
+    </div>
+  </div>
+
+  <!-- Slideshow Lower -->
+	<!-- 1 -->
+  <div class="w3-container" id="apartment">
+    <div class="w3-display-container myInfo zfColortxt">
+    <h4><span class="zf-textbox"><strong>Simple or Bust</strong></span></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col l12 m12 s12">
+        <p><span class="zf-textbox"><i class="fa-solid fa-palette"></i> Simple or Bust $10 - $15 USD </span></p>
+      </div>
+      <div class="w3-col l12 m12 s12">
+		<p><span class="zf-textbox">Includes: Open and closed mouth image, pose can change slightly when speaking (optional)</span></p>
+		<p><span class="zf-textbox"> If you use PNGTuber Plus then I can rig your PNGTuber for an extra $15 USD</span></p>
+      </div>
+    </div>
+    <hr>
+    
+    <h4><span class="zf-textbox"><i class="fa-solid fa-money-bill-transfer"></i><strong> Payment methods</strong></span></h4>
+    <p><span class="zf-textbox">Paypal, Venmo, Cash App, Ko-fi</span></p>
+	<span class="zf-textbox"><a href="https://streamelements.com/artzy_zf/tip">You can tip me here!</span></a>
+    </div>
+		
+		<!-- 2 -->
+    <div class="w3-display-container myInfo zfColortxt">
+    <h4><span class="zf-textbox"><strong>Full Body</strong></span></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col l12 m12 s12">
+        <p><span class="zf-textbox"><i class="fa-solid fa-palette"></i> Full Body $22.50 </span></p>
+      </div>
+      <div class="w3-col l12 m12 s12">
+		<p><span class="zf-textbox">Includes: Open and closed mouth image, pose can change when speaking (optional)</span></p>
+		<p><span class="zf-textbox"> If you use PNGTuber Plus then I can rig your PNGTuber for an extra $15 USD</span></p>
+      </div>
+    </div>
+    <hr>
+    
+    <h4><span class="zf-textbox"><i class="fa-solid fa-money-bill-transfer"></i><strong> Payment methods</strong></span></h4>
+    <p><span class="zf-textbox">Paypal, Venmo, Cash App, Ko-fi</span></p>
+	<span class="zf-textbox"><a href="https://streamelements.com/artzy_zf/tip">You can tip me here!</span></a>
+    </div>
+		
+		<!-- 3 -->
+    <div class="w3-display-container myInfo zfColortxt">
+    <h4><span class="zf-textbox"><strong>Animated or Detailed</strong></span></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col l12 m12 s12">
+        <p><span class="zf-textbox"><i class="fa-solid fa-palette"></i> Animated or Detailed $45 </span></p>
+      </div>
+      <div class="w3-col l12 m12 s12">
+	    <p><span class="zf-textbox">Includes: Open and closed mouth image, pose can change when speaking (optional) Rendered and Shaded</span></p>
+		<p><span class="zf-textbox"> If you use PNGTuber Plus then I can rig your PNGTuber for an extra $15 USD</span></p>
+      </div>
+    </div>
+    <hr>
+    
+    <h4><span class="zf-textbox"><i class="fa-solid fa-money-bill-transfer"></i><strong> Payment methods</strong></span></h4>
+    <p><span class="zf-textbox">Paypal, Venmo, Cash App, Ko-fi</span></p>
+	<span class="zf-textbox"><a href="https://streamelements.com/artzy_zf/tip">You can tip me here!</span></a>
+    </div>
+		
+		<!-- 4 -->
+    <div class="w3-display-container myInfo zfColortxt">
+    <h4><span class="zf-textbox"><strong>Matching</strong></span></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col l12 m12 s12">
+        <p><span class="zf-textbox"><i class="fa-solid fa-palette"></i> Matching PNGTubers, total price is 10% off (example, $15 + $15 = $30 - 10% = $27)</span></p>
+		<p><span class="zf-textbox"> If you use PNGTuber Plus then I can rig your PNGTubers for an extra $25 USD</span></p>
+      </div>
+      <div class="w3-col l12 m12 s12">
+      </div>
+    </div>
+    <hr>
+    
+    <h4><span class="zf-textbox"><i class="fa-solid fa-money-bill-transfer"></i><strong> Payment methods</strong></span></h4>
+    <p><span class="zf-textbox">Paypal, Venmo, Cash App, Ko-fi</span></p>
+	<span class="zf-textbox"><a href="https://streamelements.com/artzy_zf/tip">You can tip me here!</span></a>
+    </div>
+	
+	<!-- 5 -->
+    <div class="w3-display-container myInfo zfColortxt">
+    <h4><span class="zf-textbox"><strong>Extras (optional)</strong></span></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col l12 m12 s12">
+        <p><span class="zf-textbox"><i class="fa-solid fa-palette"></i> Extra Outfit + $15 USD - Extra Expression + $5 USD - Arm Toggle + $10 USD</span></p>
+		<p><span class="zf-textbox"> These prices are the same for any PNGTuber you want</span></p>
+		<p><span class="zf-textbox"> If you use PNGTuber Plus then I can rig your PNGTuber for an extra $15 USD</span></p>
+      </div>
+      <div class="w3-col l12 m12 s12">
+      </div>
+    </div>
+    <hr>
+    
+    <h4><span class="zf-textbox"><i class="fa-solid fa-money-bill-transfer"></i><strong> Payment methods</strong></span></h4>
+    <p><span class="zf-textbox">Paypal, Venmo, Cash App, Ko-fi</span></p>
+	<span class="zf-textbox"><a href="https://streamelements.com/artzy_zf/tip">You can tip me here!</span></a>
+    </div>
+
+  <hr>
+  
+  <!-- Slideshow End -->
+
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 zf-footer w3-small w3-center" id="footer">
+    <div>
+		<h4 style="font-weight:bold">Commission Rules</h4>
+		<br>
+		<h4><p><i class="fa-solid fa-check"></i> Will Draw: Fandoms - Humans - Anthropomorphic - Couples Art - OCs - Fluff & Angst - Light Gore - Animals - </p></h4>
+		<h4><p><i class="fa-solid fa-x"></i> Will NOT Draw: NSFW - Incest - Hate Art - Extreme Gore - Mecha (learning) - Anything That Makes Me Uncomfortable </p></h4>
+		<h4><p><i class="fa-solid fa-comment"></i> Must Pay Upfront, Then I'll Start Working On Your Commission </p></h4>
+		<h4><p><i class="fa-solid fa-comment"></i> There will be an Additional Fee if you want/need the commission sooner than expected. E.G. you ask for 6 emotes and need them in under a week, it'll be an additional +$6 USD (This price could be higher or lower depending on what you get and how soon you'll need it) </p></h4>
+		<h4><p><i class="fa-solid fa-comment"></i> Always try and commission me around two weeks in advance to when you need it, just because I do get commissions a lot and I don't wanna stress myself out, my health has to come first. </p></h4>
+		<h4><p><i class="fa-solid fa-comment"></i> If you are ever unsure if my commissions are open or not, I always update on most of my socials how many commission slots I have open so you'll know. And you can also DM me to check just in case if you want to. </p></h4>
+		<br>
+        <h4 style="font-weight:bold">Main Ways You Can Contact Me For Commissions</h4>
+        <br>
+        <h4><a style="padding-right:20px" href="https://discordapp.com/users/1356227227796246592">Discord</a></h4>
+		<h4><a style="padding-right:20px" href="https://www.instagram.com/artzy_zf">Instagram</a></h4>
+		<h4><a style="padding-right:20px" href="https://bsky.app/profile/artzy-zf.bsky.social">Bluesky</a></h4>
+		<br><br><br>
+      </div>
+    </div>
+  </footer>
+
+  <div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+	var y = document.getElementsByClassName("myInfo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+		y[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+	y[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>
